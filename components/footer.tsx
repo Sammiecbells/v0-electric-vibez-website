@@ -7,7 +7,7 @@ export function Footer() {
         <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
           <Link
             href="/"
-            className="text-xl lg:text-2xl font-bold tracking-tight text-foreground"
+            className="text-xl lg:text-2xl font-bold tracking-tight text-accent"
           >
             ELECTRIC VIBEZ
           </Link>
