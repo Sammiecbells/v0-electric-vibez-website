@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react";
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-end justify-center overflow-hidden pb-32">
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
@@ -18,7 +18,7 @@ export function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 lg:px-8 text-center pt-20">
+      <div className="relative z-10 container mx-auto px-4 lg:px-8 text-center">
         <p className="text-sm lg:text-base uppercase tracking-[0.3em] text-muted-foreground mb-6">
           Wedding & Event Duo
         </p>
