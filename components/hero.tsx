@@ -11,7 +11,7 @@ export function Hero() {
           src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/0e959897-97fc-4424-94f3-7a6dfbd71f71.jpeg"
           alt="Electric Vibez duo performing"
           fill
-          className="object-cover object-center"
+          className="object-cover object-top"
           priority
         />
         <div className="absolute inset-0 bg-background/70" />
