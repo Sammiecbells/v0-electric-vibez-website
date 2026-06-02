@@ -20,7 +20,7 @@ export function Hero() {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 lg:px-8 text-center pt-20">
         <p className="text-sm lg:text-base uppercase tracking-[0.3em] text-muted-foreground mb-6">
-          High Energy Party Duo
+          Wedding & Event Duo
         </p>
         <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold tracking-tighter text-foreground mb-8 text-balance">
           ELECTRIC
