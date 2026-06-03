@@ -37,22 +37,22 @@ export function Contact() {
 
             <div className="space-y-6">
               <a
-                href="mailto:hello@electricvibez.com"
+                href="mailto:electricvibezmusic@gmail.com"
                 className="flex items-center gap-4 text-foreground hover:text-accent transition-colors group"
               >
                 <div className="w-12 h-12 border border-border flex items-center justify-center group-hover:border-accent transition-colors">
                   <Mail className="w-5 h-5" />
                 </div>
-                <span className="text-lg">hello@electricvibez.com</span>
+                <span className="text-lg">electricvibezmusic@gmail.com</span>
               </a>
               <a
-                href="tel:+15551234567"
+                href="tel:+64211079135"
                 className="flex items-center gap-4 text-foreground hover:text-accent transition-colors group"
               >
                 <div className="w-12 h-12 border border-border flex items-center justify-center group-hover:border-accent transition-colors">
                   <Phone className="w-5 h-5" />
                 </div>
-                <span className="text-lg">(555) 123-4567</span>
+                <span className="text-lg">021 107 9135</span>
               </a>
             </div>
 
@@ -137,7 +137,7 @@ export function Contact() {
                   <option value="wedding">Wedding</option>
                   <option value="corporate">Corporate Event</option>
                   <option value="bar">Bar/Nightlife</option>
-                  <option value="restaurant">Restaurant</option>
+                  <option value="birthday">Birthday</option>
                   <option value="private">Private Party</option>
                   <option value="other">Other</option>
                 </select>

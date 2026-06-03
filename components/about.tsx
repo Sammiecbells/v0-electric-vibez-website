@@ -18,24 +18,24 @@ export function About() {
               About Us
             </span>
             <h2 className="text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight text-foreground mt-4 mb-8 text-balance">
-              We Create Unforgettable Moments
+              Creating Contagious Energy and Unforgettable Moments
             </h2>
             <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
               <p>
-                Electric Vibez is more than just a band—we&apos;re your
-                partners in creating the perfect atmosphere for any event.
-                As a dynamic duo, we bring high energy, versatility, and
-                professionalism to every performance.
+                Electric Vibez are an extremely versatile and skilled duo based
+                in BOP bringing flair to your next event! They can easily
+                adjust, perfectly complementing your relaxed background vibes, or
+                amp up the night!
               </p>
               <p>
-                From intimate wedding receptions to packed corporate galas,
-                from lively bar nights to elegant restaurant evenings, we
-                tailor our setlist and energy to match your vision perfectly.
+                Effortlessly carrying a full dancefloor and catering to all your
+                requests! They specialise in anything from country &amp; rock all
+                the way to reggae &amp; RnB! Definitely a duo that brings you
+                bang for your buck!
               </p>
               <p>
-                Our chemistry on stage is undeniable, and our passion for
-                music is contagious. When you book Electric Vibez, you&apos;re
-                booking an experience your guests will talk about for years.
+                Guaranteed to get a crowd up and on their feet and wanting more!
+                Perfect for your Wedding or Private Function.
               </p>
             </div>
             <div className="grid grid-cols-3 gap-8 mt-12 pt-12 border-t border-border">

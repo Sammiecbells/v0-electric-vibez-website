@@ -1,4 +1,4 @@
-import { Heart, Building2, Wine, Utensils } from "lucide-react";
+import { Heart, Building2, PartyPopper } from "lucide-react";
 
 const services = [
   {
@@ -14,16 +14,10 @@ const services = [
       "Professional entertainment for galas, holiday parties, product launches, and team celebrations. We set the tone for success.",
   },
   {
-    icon: Wine,
-    title: "Bars & Nightlife",
+    icon: PartyPopper,
+    title: "Birthdays & Celebrations",
     description:
-      "Keep the energy high and the crowd engaged with our dynamic performances perfect for bars, clubs, and late-night venues.",
-  },
-  {
-    icon: Utensils,
-    title: "Restaurants",
-    description:
-      "Elegant acoustic sets and ambient performances that enhance the dining experience without overwhelming conversation.",
+      "From milestone birthdays to anniversaries and private parties, we bring the energy to make your celebration one to remember.",
   },
 ];
 
@@ -36,11 +30,11 @@ export function Services() {
             What We Do
           </span>
           <h2 className="text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight text-foreground mt-4 text-balance">
-            Perfect For Any Event
+            Perfectly Tailored to Your Event
           </h2>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 max-w-5xl mx-auto">
           {services.map((service, index) => (
             <div
               key={index}

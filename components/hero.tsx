@@ -14,34 +14,33 @@ export function Hero() {
           className="object-cover object-[center_20%]"
           priority
         />
-        <div className="absolute inset-0 bg-background/70" />
+        <div className="absolute inset-0 bg-gradient-to-t from-background/95 from-15% via-background/30 via-45% to-transparent" />
       </div>
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 lg:px-8 text-center">
-        <p className="text-sm lg:text-base uppercase tracking-[0.3em] text-muted-foreground mb-6">
+        <p className="text-sm lg:text-base uppercase tracking-[0.3em] text-foreground/90 mb-6">
           Wedding & Event Duo
         </p>
-        <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold tracking-tighter text-accent mb-8 text-balance">
+        <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold tracking-[0.06em] text-accent mb-8 text-balance">
           ELECTRIC
           <br />
           VIBEZ
         </h1>
         <p className="text-lg lg:text-xl text-muted-foreground max-w-2xl mx-auto mb-12 leading-relaxed">
-          Bringing unforgettable energy to weddings, corporate events, and
-          venues across the region.
+          Bringing that extra flair to weddings, events and dancefloors NZ wide
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link
             href="#contact"
             className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-8 py-4 text-base uppercase tracking-widest hover:bg-primary/90 transition-colors min-h-[56px]"
           >
-            Book Your Event
+            Book Us
             <ArrowRight className="w-4 h-4" />
           </Link>
           <Link
-            href="#gallery"
-            className="inline-flex items-center justify-center gap-2 border border-foreground text-foreground px-8 py-4 text-base uppercase tracking-widest hover:bg-foreground hover:text-background transition-colors min-h-[56px]"
+            href="#events"
+            className="inline-flex items-center justify-center gap-2 border border-primary/60 text-primary px-8 py-4 text-base uppercase tracking-widest hover:bg-primary/10 transition-colors min-h-[56px]"
           >
             See Us Live
           </Link>

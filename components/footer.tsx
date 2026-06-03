@@ -32,6 +32,12 @@ export function Footer() {
               Gallery
             </Link>
             <Link
+              href="#events"
+              className="text-sm uppercase tracking-widest text-muted-foreground hover:text-foreground transition-colors"
+            >
+              Live Shows
+            </Link>
+            <Link
               href="#testimonials"
               className="text-sm uppercase tracking-widest text-muted-foreground hover:text-foreground transition-colors"
             >
