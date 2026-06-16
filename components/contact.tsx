@@ -56,21 +56,30 @@ export function Contact() {
               </a>
             </div>
 
-            <div className="flex gap-4 mt-12">
+            <div className="mt-12">
+              <p className="text-sm uppercase tracking-[0.3em] text-muted-foreground mb-4">
+                Follow Us
+              </p>
+              <div className="flex gap-4">
               <a
-                href="#"
+                href="https://www.instagram.com/electricvibez_music?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-12 h-12 border border-border flex items-center justify-center hover:border-foreground hover:bg-foreground hover:text-background transition-all"
                 aria-label="Instagram"
               >
                 <Instagram className="w-5 h-5" />
               </a>
               <a
-                href="#"
+                href="https://www.facebook.com/profile.php?id=61561533703539"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-12 h-12 border border-border flex items-center justify-center hover:border-foreground hover:bg-foreground hover:text-background transition-all"
                 aria-label="Facebook"
               >
                 <Facebook className="w-5 h-5" />
               </a>
+              </div>
             </div>
           </div>
 

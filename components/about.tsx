@@ -7,10 +7,10 @@ export function About() {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           <div className="relative aspect-[4/5] lg:aspect-[3/4]">
             <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/6ddbe4cf-2e0f-49db-ba73-878487e41202.jpeg"
-              alt="Electric Vibez duo portrait"
+              src="/images/about-duo.png"
+              alt="Electric Vibez duo performing on the beach"
               fill
-              className="object-cover"
+              className="object-cover object-center"
             />
           </div>
           <div>
@@ -37,32 +37,6 @@ export function About() {
                 Guaranteed to get a crowd up and on their feet and wanting more!
                 Perfect for your Wedding or Private Function.
               </p>
-            </div>
-            <div className="grid grid-cols-3 gap-8 mt-12 pt-12 border-t border-border">
-              <div>
-                <div className="text-3xl lg:text-4xl font-bold text-foreground">
-                  500+
-                </div>
-                <div className="text-sm uppercase tracking-widest text-muted-foreground mt-2">
-                  Events
-                </div>
-              </div>
-              <div>
-                <div className="text-3xl lg:text-4xl font-bold text-foreground">
-                  5★
-                </div>
-                <div className="text-sm uppercase tracking-widest text-muted-foreground mt-2">
-                  Rating
-                </div>
-              </div>
-              <div>
-                <div className="text-3xl lg:text-4xl font-bold text-foreground">
-                  100%
-                </div>
-                <div className="text-sm uppercase tracking-widest text-muted-foreground mt-2">
-                  Satisfaction
-                </div>
-              </div>
             </div>
           </div>
         </div>

@@ -5,13 +5,13 @@ const services = [
     icon: Heart,
     title: "Weddings",
     description:
-      "Make your special day unforgettable with romantic sets, high-energy reception music, and seamless coordination with your event timeline.",
+      "Make your special day unforgettable with dreamy acoustic sets including requested songs of your choice, moving into summery canapes, ramping up to high-energy reception music that even grandma will be on the dancefloor!",
   },
   {
     icon: Building2,
     title: "Corporate Events",
     description:
-      "Professional entertainment for galas, holiday parties, product launches, and team celebrations. We set the tone for success.",
+      "Slick professional entertainment for conferences, galas, awards nights, corporate parties, product launches, and team celebrations. We set the tone for success.",
   },
   {
     icon: PartyPopper,
@@ -30,7 +30,7 @@ export function Services() {
             What We Do
           </span>
           <h2 className="text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight text-foreground mt-4 text-balance">
-            Perfectly Tailored to Your Event
+            Perfectly Tailored for Your Next Event
           </h2>
         </div>
 

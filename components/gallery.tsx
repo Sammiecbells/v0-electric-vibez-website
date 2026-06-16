@@ -27,7 +27,7 @@ export function Gallery() {
             Our Work
           </span>
           <h2 className="text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight text-foreground mt-4 text-balance">
-            See Us In Action
+            Check Out Our Promo Video & Pics
           </h2>
         </div>
 
