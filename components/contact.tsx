@@ -60,9 +60,8 @@ export function Contact() {
               Book Your Event
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed mb-12">
-              Ready to bring the energy to your next event? Fill out the form
-              and we&apos;ll get back to you within 24 hours to discuss your
-              vision.
+              Ready to bring the energy to your next event? Fill out our form
+              and we will be in touch!
             </p>
 
             <div className="space-y-6">
@@ -232,7 +231,7 @@ export function Contact() {
             {status === "success" && (
               <p className="text-foreground">
                 Thanks! Your message has been sent. We&apos;ll get back to you
-                within 24 hours.
+                shortly!
               </p>
             )}
 

@@ -22,8 +22,8 @@ export function About() {
             </h2>
             <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
               <p>
-                Electric Vibez are an extremely versatile and skilled duo based
-                in BOP bringing flair to your next event! They can easily
+                Sammie &amp; Angelo are an extremely versatile and skilled duo
+                based in BOP bringing flair to your next event! They can easily
                 adjust, perfectly complementing your relaxed background vibes, or
                 amp up the night!
               </p>

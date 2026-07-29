@@ -22,7 +22,7 @@ export function Hero() {
         <p className="text-sm lg:text-base uppercase tracking-[0.3em] text-foreground/90 mb-6">
           Wedding & Event Duo
         </p>
-        <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold tracking-[0.06em] text-accent mb-8 text-balance">
+        <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold tracking-[0.06em] text-primary mb-8 text-balance">
           ELECTRIC
           <br />
           VIBEZ
