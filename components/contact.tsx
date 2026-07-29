@@ -3,19 +3,49 @@
 import { useState } from "react";
 import { ArrowRight, Mail, Phone, Instagram, Facebook } from "lucide-react";
 
-export function Contact() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    eventType: "",
-    date: "",
-    message: "",
-  });
+const initialFormData = {
+  name: "",
+  email: "",
+  eventType: "",
+  date: "",
+  message: "",
+};
 
-  const handleSubmit = (e: React.FormEvent) => {
+export function Contact() {
+  const [formData, setFormData] = useState(initialFormData);
+  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">(
+    "idle"
+  );
+  const [errorMessage, setErrorMessage] = useState("");
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission
-    console.log(formData);
+    setStatus("loading");
+    setErrorMessage("");
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error ?? "Failed to send message.");
+      }
+
+      setStatus("success");
+      setFormData(initialFormData);
+    } catch (error) {
+      setStatus("error");
+      setErrorMessage(
+        error instanceof Error
+          ? error.message
+          : "Something went wrong. Please try again."
+      );
+    }
   };
 
   return (
@@ -192,11 +222,23 @@ export function Contact() {
 
             <button
               type="submit"
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-8 py-4 text-base uppercase tracking-widest hover:bg-primary/90 transition-colors min-h-[56px]"
+              disabled={status === "loading"}
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-8 py-4 text-base uppercase tracking-widest hover:bg-primary/90 transition-colors min-h-[56px] disabled:opacity-60 disabled:cursor-not-allowed"
             >
-              Send Message
+              {status === "loading" ? "Sending..." : "Send Message"}
               <ArrowRight className="w-4 h-4" />
             </button>
+
+            {status === "success" && (
+              <p className="text-foreground">
+                Thanks! Your message has been sent. We&apos;ll get back to you
+                within 24 hours.
+              </p>
+            )}
+
+            {status === "error" && (
+              <p className="text-primary">{errorMessage}</p>
+            )}
           </form>
         </div>
       </div>
