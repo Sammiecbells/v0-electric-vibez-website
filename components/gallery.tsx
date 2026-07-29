@@ -27,16 +27,16 @@ const images = [
     className: "col-span-1",
   },
   {
-    src: "/images/gallery-lounge.png",
-    alt: "Sammie and Angelo with acoustic guitar at a lounge event",
-    className: "col-span-1",
-    objectPosition: "center top",
-  },
-  {
     src: "/images/gallery-duo.png",
     alt: "Sammie and Angelo with acoustic guitar",
     className: "col-span-1",
     objectPosition: "center top",
+  },
+  {
+    src: "/images/gallery-bar-stool.png",
+    alt: "Sammie and Angelo with acoustic guitar at a bar stool",
+    className: "col-span-1",
+    objectPosition: "center 15%",
   },
 ];
 
@@ -58,7 +58,7 @@ export function Gallery() {
             <h3 className="text-sm uppercase tracking-[0.3em] text-muted-foreground mb-6 lg:mb-8">
               Snaps
             </h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6 max-w-6xl mx-auto">
+            <div className="grid grid-cols-2 gap-4 lg:gap-6 max-w-4xl mx-auto">
               {images.map((image, index) => (
                 <div
                   key={index}
