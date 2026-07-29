@@ -27,9 +27,16 @@ const images = [
     className: "col-span-1",
   },
   {
-    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/0e959897-97fc-4424-94f3-7a6dfbd71f71.jpeg",
-    alt: "Electric Vibez at a bar venue",
+    src: "/images/gallery-lounge.png",
+    alt: "Sammie and Angelo with acoustic guitar at a lounge event",
     className: "col-span-1",
+    objectPosition: "center top",
+  },
+  {
+    src: "/images/gallery-duo.png",
+    alt: "Sammie and Angelo with acoustic guitar",
+    className: "col-span-1",
+    objectPosition: "center top",
   },
 ];
 
@@ -49,6 +56,33 @@ export function Gallery() {
         <div className="max-w-6xl mx-auto space-y-16 lg:space-y-20">
           <div>
             <h3 className="text-sm uppercase tracking-[0.3em] text-muted-foreground mb-6 lg:mb-8">
+              Snaps
+            </h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6 max-w-6xl mx-auto">
+              {images.map((image, index) => (
+                <div
+                  key={index}
+                  className={`relative aspect-square overflow-hidden group ${image.className}`}
+                >
+                  <Image
+                    src={image.src}
+                    alt={image.alt}
+                    fill
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    style={
+                      "objectPosition" in image && image.objectPosition
+                        ? { objectPosition: image.objectPosition }
+                        : undefined
+                    }
+                  />
+                  <div className="absolute inset-0 bg-background/0 group-hover:bg-background/20 transition-colors duration-300" />
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div>
+            <h3 className="text-sm uppercase tracking-[0.3em] text-muted-foreground mb-6 lg:mb-8">
               Videos
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6">
@@ -65,28 +99,6 @@ export function Gallery() {
                     allowFullScreen
                     className="absolute inset-0 h-full w-full"
                   />
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div>
-            <h3 className="text-sm uppercase tracking-[0.3em] text-muted-foreground mb-6 lg:mb-8">
-              Snaps
-            </h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6 max-w-6xl mx-auto">
-              {images.map((image, index) => (
-                <div
-                  key={index}
-                  className={`relative aspect-square overflow-hidden group ${image.className}`}
-                >
-                  <Image
-                    src={image.src}
-                    alt={image.alt}
-                    fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-background/0 group-hover:bg-background/20 transition-colors duration-300" />
                 </div>
               ))}
             </div>
